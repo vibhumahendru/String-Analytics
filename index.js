@@ -1722,10 +1722,10 @@ console.log(`The ${this.type} rabbit says '${line}'`);
 
 let vibzRabbit = new Rabbit("funny")
 
-console.log(vibzRabbit.speak("hiiiii"));
+// console.log(vibzRabbit.speak("hiiiii"));
 
 
-// 
+//
 // fetch('http://localhost:3000/users')
 // .then(res=> res.json())
 // .then(res=> console.log(res.length))
@@ -1741,7 +1741,70 @@ console.log(vibzRabbit.speak("hiiiii"));
 //     })
 //   }
 // ).then(res=> res.json()).then(res=>console.log(res))
+
 //
+
+
+// function zeros (n) {
+//     let sum = 1
+//     let counter = 1
+//     while (counter < n+1) {
+//       sum *= counter
+//       counter += 1
+//     }
+//     // console.log(sum);
+//     // let str = sum.toString()
+//     // let digitAr = str.split("").reverse()
+//     // // let i = 0
+//     // for (var i = 0; i < digitAr.length; i++) {
+//     //   if (digitAr[i]!= "0") {
+//     //     console.log(i);
+//     //     return i
+//     //   }
+//     // }
+//
+//     // return digitAr
+//
+//     console.log("hi", sum);
+//     // if (sum%10 ==0) {
+//     //   return 1
+//     // }
+//     let mult = 10
+//     let count = 0
+//     for (var i = 0; i < sum; i++) {
+//       if (sum%mult==0) {
+//         count +=1
+//         mult=mult*10
+//       }else{
+//         console.log("yoo");
+//         return count}
+//     }
+// }
+
+function stringReverse(string) {
+  let emptyAr = []
+  for (var i = string.length-1; i >= 0; i--) {
+    console.log(i);
+    emptyAr.push(string[i])
+  }
+  let answer = emptyAr.join("")
+  return answer
+}
+
+
+console.log(stringReverse("helloSUPP"));
+
+// Each number in the array is a closing stock price on each day.
+// write an algorithm that returns the greatest loss. Function biggestloss() takes an array and returns a number.
+
+array1 = [14, 1, 18, 23, 12, 8, 16] // should return 15
+array2 = [14, 1, 18, 23, 12, 16] //should return 13
+
+function biggestLoss(array) {
+
+}
+
+console.log("VS CODEEEE");
 
 
 }) //// END DOM CONTENT LOADED
