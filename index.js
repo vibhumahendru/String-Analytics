@@ -1846,10 +1846,45 @@ let vibhuRabbit = new RabbitBro("rohan", "female")
   let ages = {
     Jack:23,
     Vibhu: 24
+
   }
 
-  console.log(ages.Jack);
+  let reg1 = new RegExp("abc")
+  let reg2 = /abcd/
 
+  //MATCHES
+
+  console.log(reg1.test("abcde"));
+
+  console.log(/[0-9]/.test("193"));
+
+  console.log(reg2);
+
+  let fifteen = Promise.resolve(()=>{
+    return "sup "
+  }
+  );
+
+  // fifteen.then(value => console.log(`Got ${value()}`));
+
+  function storage(nest, name) {
+  return new Promise(resolve => {
+    nest.readStorage(name, result => resolve(result));
+  });
+}
+
+function helloBhai(name) {
+  return new Promise((resolve, reject)=>{
+    let a = 1 + 1
+    if (a == 2) {
+      resolve("SUCCESS BC")
+    }
+    else{reject("Faileddddd")}
+
+  })
+}
+
+console.log(helloBhai("vibzz").then(val => console.log(val)).catch(val=> console.log(val)))
 
 }) //// END DOM CONTENT LOADED
 
