@@ -1792,19 +1792,63 @@ function stringReverse(string) {
 }
 
 
-console.log(stringReverse("helloSUPP"));
+// console.log(stringReverse("helloSUPP"));
 
 // Each number in the array is a closing stock price on each day.
 // write an algorithm that returns the greatest loss. Function biggestloss() takes an array and returns a number.
 
 array1 = [14, 1, 18, 23, 12, 8, 16] // should return 15
-array2 = [14, 1, 18, 23, 12, 16] //should return 13
+array2 = [14, 1, 0, 23, 12, 16] //should return 13
+array3 = [-3, -4, -5]
 
 function biggestLoss(array) {
+  let highest = 0;
+  let lowest = 0
+  let answer = 0;
 
+  for (var i = 0; i < array.length; i++) {
+    if (i == 0) {
+      highest = array[i]
+      lowest = array[i]
+    }
+    if (array[i]> highest) {
+      highest = array[i]
+      lowest = array[i]
+    }
+    if (array[i]< lowest) {
+      lowest = array[i]
+      if ((highest - lowest) > answer) {
+        answer = highest - lowest
+      }
+    }
+  }
+
+// console.log(highest, lowest);
+return answer
 }
 
-console.log("VS CODEEEE");
+// console.log(biggestLoss(array3));
+
+let empty = {};
+// console.log(Object.getPrototypeOf([]));
+class RabbitBro {
+   constructor(type="vibhu", gender="male") {
+     this.type = type;
+     this.gender = gender
+   }
+speak(line) {
+console.log(`The ${this.type} rabbit says '${line}'`);
+} }
+let killerRabbit = new RabbitBro("killer");
+let blackRabbit = new RabbitBro("black");
+let vibhuRabbit = new RabbitBro("rohan", "female")
+
+  let ages = {
+    Jack:23,
+    Vibhu: 24
+  }
+
+  console.log(ages.Jack);
 
 
 }) //// END DOM CONTENT LOADED
