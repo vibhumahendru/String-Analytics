@@ -1801,31 +1801,31 @@ array1 = [14, 1, 18, 23, 12, 8, 16] // should return 15
 array2 = [14, 1, 0, 23, 12, 16] //should return 13
 array3 = [-3, -4, -5]
 
-function biggestLoss(array) {
-  let highest = 0;
-  let lowest = 0
-  let answer = 0;
-
-  for (var i = 0; i < array.length; i++) {
-    if (i == 0) {
-      highest = array[i]
-      lowest = array[i]
-    }
-    if (array[i]> highest) {
-      highest = array[i]
-      lowest = array[i]
-    }
-    if (array[i]< lowest) {
-      lowest = array[i]
-      if ((highest - lowest) > answer) {
-        answer = highest - lowest
-      }
-    }
-  }
-
-// console.log(highest, lowest);
-return answer
-}
+// function biggestLoss(array) {
+//   let highest = 0;
+//   let lowest = 0
+//   let answer = 0;
+//
+//   for (var i = 0; i < array.length; i++) {
+//     if (i == 0) {
+//       highest = array[i]
+//       lowest = array[i]
+//     }
+//     if (array[i]> highest) {
+//       highest = array[i]
+//       lowest = array[i]
+//     }
+//     if (array[i]< lowest) {
+//       lowest = array[i]
+//       if ((highest - lowest) > answer) {
+//         answer = highest - lowest
+//       }
+//     }
+//   }
+//
+// // console.log(highest, lowest);
+// return answer
+// }
 
 // console.log(biggestLoss(array3));
 
@@ -1873,18 +1873,69 @@ let vibhuRabbit = new RabbitBro("rohan", "female")
   });
 }
 
-function helloBhai(name) {
-  return new Promise((resolve, reject)=>{
-    let a = 1 + 1
-    if (a == 2) {
-      resolve("SUCCESS BC")
-    }
-    else{reject("Faileddddd")}
+// function helloBhai(name) {
+//   // return new Promise((resolve, reject)=>{
+//   //   let a = 1 + 1
+//   //
+//   //   let counter = 0
+//   //   let sum = 0
+//   //
+//   //   while (counter < 1000000000) {
+//   //     let randomNum = Math.floor(1 + Math.random() * 10);
+//   //     sum += randomNum
+//   //     counter += 1
+//   //   }
+//   //
+//   //
+//   //   if (a == 2) {
+//   //     resolve(sum)
+//   //   }
+//   //   else{reject("Faileddddd")}
+//   //
+//   // })
+//
+//   let counter = 0
+//   let sum = 0
+//
+//   while (counter < 1000000000) {
+//     let randomNum = Math.floor(1 + Math.random() * 10);
+//     sum += randomNum
+//     counter += 1
+//   }
+//   return sum
+// }
 
-  })
-}
+// console.log(helloBhai("vibzz").then(val => console.log(val)).catch(val=> console.log(val)))
 
-console.log(helloBhai("vibzz").then(val => console.log(val)).catch(val=> console.log(val)))
+// console.log(helloBhai());
+// console.log("not over yet");
+
+
+//
+// function parseMolecule(formula) {
+//   let answerObj = {}
+//   let formulaAr = formula.split("")
+//   console.log(formulaAr)
+//   formulaAr.forEach((el)=>{
+//     answerObj[el] = ""
+//
+//   })
+//   return answerObj
+// }
+
+
+
+
+// console.log(parseMolecule("H2O"));
+
+
+
+
+
+
+
+
+
 
 }) //// END DOM CONTENT LOADED
 
