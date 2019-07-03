@@ -1928,10 +1928,36 @@ let vibhuRabbit = new RabbitBro("rohan", "female")
 
 // console.log(parseMolecule("H2O"));
 
+// let nextPic = document.getElementsByClassName("HBoOv coreSpriteRightPaginationArrow")
+// let likeBtn = document.getElementsByClassName("dCJp8 afkep _0mzm-")
+//
+// function likePhoto() {
+//   // console.log("just liked Photo");
+//   likeBtn[1].click()
+// }
+//
+// function nextPicture() {
+//   // console.log("went to next pic");
+//   nextPic[0].click()
+// }
+//
+// function instagramBotLiker() {
+//   setTimeout(()=>likePhoto(), 2000)
+//   setTimeout(()=>nextPicture(), 4000)
+// }
+//
+// let interval = setInterval(()=>instagramBotLiker(),5000)
 
 
+var add = function () {
+  var counter = 0
+  console.log("YO YO CLOSURE");
+  return function () {counter += 1; return counter}
+}();
 
-
+console.log(add());
+console.log(add());
+console.log(add());
 
 
 
